@@ -12,7 +12,8 @@ frisby.create('JSONPlaceholder - Posts API test: GET /posts')
     title: String,
     body: String
   })
-  .afterJSON(function (json) {
-    console.log(json);
-  })
+  // .afterJSON(function (json) {
+  //   console.log(json);
+  // })
+  .inspectJSON()
   .toss();
